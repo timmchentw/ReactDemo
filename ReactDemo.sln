@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactDemo", "ReactDemo\ReactDemo.csproj", "{3BE8BBE5-AC28-4FEB-9524-836891FA599D}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNode", "ReactNode\ReactNode.njsproj", "{11BA68C8-31D3-485A-AC90-7C190A82B33C}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ReactNode", "ReactDemo\ReactNode.njsproj", "{11BA68C8-31D3-485A-AC90-7C190A82B33C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
