@@ -5,5 +5,27 @@
   "main": "app.js",
   "author": {
     "name": ""
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "express": "~4.16.4",
+    "path": "~0.12.7",
+    "react": "^16.11.0",
+    "react-dom": "~16.6.0",
+    "webpack": "^4.23.1",
+    "webpack-cli": "~3.1.2",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-notifier": "^1.8.0"
   }
 }
