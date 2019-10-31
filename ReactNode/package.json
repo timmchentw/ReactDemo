@@ -1,0 +1,9 @@
+{
+  "name": "react-node",
+  "version": "0.0.0",
+  "description": "ReactNode",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
