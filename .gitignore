@@ -1,0 +1,24 @@
+.vs/
+bin/
+
+## Manual Ignore List
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+*.cache
+*.webinfo		# Web專案虛擬根目錄位置(每台電腦不同)
+*.csproj.user	# 專案使用者選項檔(開啟檔案與游標位置)
+*.suo			# 方案使用者選項(使用者層級自訂，例如中斷點)
+*resharp*		# Resharper工具暫存檔
+*Resharper* 
+*ReSharper* 
+*.Load  
+*.NoLoad  
+*.~m2  
+*.cache
+_notes			# Dreamwaver編輯網頁目錄
+[Tt]humbs.db	# Windows圖片預覽暫存檔
+
+## Should ignore when cooperating
