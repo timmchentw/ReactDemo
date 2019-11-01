@@ -1,5 +1,6 @@
 # ReactJS
 ## 使用 Visual Studio Node 於 .net MVC 5 建立React物件
+
 [《準備》1. 安裝環境](#1-安裝環境) </br>
 [《準備》2. 設定組態](#2-建立專案與組態檔) </br>
 [《準備》3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
@@ -35,18 +36,21 @@ var WebpackNotifierPlugin = require("webpack-notifier");
 var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = {
-    entry: "./Scripts/jsx/index.jsx",   // 轉換前之React JSX檔案路徑 (可自行定義)
+    entry: "./Scripts/jsx/index.jsx",                       // 轉換前之React JSX檔案路徑 (可自行定義)
     output: {
         path: path.resolve(__dirname, "./Scripts/react"),   // 轉換後之JS輸出檔案路徑 (可自行定義)
-        filename: "bundle.js"
+        filename: "bundle.js"                               // 輸出檔名
     },
     module: {
         rules: [
             {
-                test: /\.jsx$/,   // 目標為JSX檔案
+                test: /\.jsx$/,                             // 目標為JSX檔案
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: "babel-loader"                  // 使用babel-loader進行編譯
+                },                
+                options: {
+                    presets: ["@babel/preset-env"]          // 可使用Babel進行最新ES6編譯
                 }
             }
         ]
