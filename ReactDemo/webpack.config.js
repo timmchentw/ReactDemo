@@ -8,7 +8,7 @@ module.exports = {
     entry: "./Scripts/jsx/index.jsx",
     output: {
         path: path.resolve(__dirname, "./Scripts/react"),
-        filename: "bundle.jsx"
+        filename: "bundle.js"
     },
     module: {
         rules: [
