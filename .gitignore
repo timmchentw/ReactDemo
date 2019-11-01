@@ -8,17 +8,18 @@ bin/
 [Rr]elease/
 [Rr]eleases/
 *.cache
-*.webinfo		# Web±M®×µêÀÀ®Ú¥Ø¿ı¦ì¸m(¨C¥x¹q¸£¤£¦P)
-*.csproj.user	# ±M®×¨Ï¥ÎªÌ¿ï¶µÀÉ(¶}±ÒÀÉ®×»P´å¼Ğ¦ì¸m)
-*.suo			# ¤è®×¨Ï¥ÎªÌ¿ï¶µ(¨Ï¥ÎªÌ¼h¯Å¦Û­q¡A¨Ò¦p¤¤Â_ÂI)
-*resharp*		# Resharper¤u¨ã¼È¦sÀÉ
+*.webinfo		# Webï¿½Mï¿½×µï¿½ï¿½ï¿½ï¿½Ú¥Ø¿ï¿½ï¿½ï¿½m(ï¿½Cï¿½xï¿½qï¿½ï¿½ï¿½ï¿½ï¿½P)
+*.csproj.user	# ï¿½Mï¿½×¨Ï¥ÎªÌ¿ï¶µï¿½ï¿½(ï¿½}ï¿½ï¿½ï¿½É®×»Pï¿½ï¿½Ğ¦ï¿½m)
+*.suo			# ï¿½ï¿½×¨Ï¥ÎªÌ¿ï¶µ(ï¿½Ï¥ÎªÌ¼hï¿½Å¦Û­qï¿½Aï¿½Ò¦pï¿½ï¿½ï¿½_ï¿½I)
+*resharp*		# Resharperï¿½uï¿½ï¿½È¦sï¿½ï¿½
 *Resharper* 
 *ReSharper* 
 *.Load  
 *.NoLoad  
 *.~m2  
 *.cache
-_notes			# Dreamwaver½s¿èºô­¶¥Ø¿ı
-[Tt]humbs.db	# Windows¹Ï¤ù¹wÄı¼È¦sÀÉ
+_notes			# Dreamwaverï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ø¿ï¿½
+[Tt]humbs.db	# Windowsï¿½Ï¤ï¿½ï¿½wï¿½ï¿½ï¿½È¦sï¿½ï¿½
 
 ## Should ignore when cooperating
+å®‰è£èˆ‡ä½¿ç”¨æ­¥é©Ÿ/photothumb.db
