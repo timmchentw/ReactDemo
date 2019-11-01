@@ -1,13 +1,13 @@
 # ReactJS
 ## 使用 Visual Studio Node 於 .net MVC 5 建立React物件
 
-#### [準備篇](#1-安裝環境)
-##### [1. 安裝環境](#1-安裝環境) </br>
-##### [2. 設定組態](#2-建立專案與組態檔) </br>
-##### [3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
-#### [應用篇](#4-執行NPM套件以轉換JSX檔案)
-##### [4. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
-##### [5. 引用React](#5-引用轉換後之React-JS檔案) </br>
+[**《準備篇》**](#1-安裝環境) </br>
+ [　　1. 安裝環境](#1-安裝環境) </br>
+ [　　2. 設定組態](#2-建立專案與組態檔) </br>
+ [　　3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
+[**《應用篇》**](#4-執行NPM套件以轉換JSX檔案) </br>
+ [　　4. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
+ [　　5. 引用React](#5-引用轉換後之React-JS檔案) </br>
 
 ### 1. 安裝環境
 (1) 安裝 [Visual Studio Node JS](https://docs.microsoft.com/zh-tw/visualstudio/ide/quickstart-nodejs?view=vs-2019) (用於建立N專案) </br>
