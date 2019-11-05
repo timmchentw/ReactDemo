@@ -5,7 +5,7 @@ var WebpackNotifierPlugin = require("webpack-notifier");
 var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = {
-    entry: "./Scripts/react/main.jsx",
+    entry: "./Scripts/react/main.js",
     output: {
         path: path.resolve(__dirname, "./Scripts/react"),
         filename: "bundle.js"
@@ -13,7 +13,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",

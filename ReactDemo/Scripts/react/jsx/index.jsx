@@ -51,7 +51,7 @@ App2.defaultProps = {
     text2: "This will be replaced."
 }
 
-export default App
 
 // 呼叫App組件 & (2)指定變數值
 // render(<App text1="Hmmmmmmmm" />, document.getElementById('app'));
+export default App;

@@ -139,6 +139,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\react\bundle.js" />
     <Content Include="Scripts\react\jsx\forms.jsx" />
     <Content Include="Scripts\react\jsx\index.jsx" />
     <Content Include="Scripts\jquery-3.3.1.js" />
