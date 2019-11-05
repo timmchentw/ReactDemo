@@ -12,5 +12,9 @@ namespace ReactDemo.Controllers
         {
             return View();
         }
+        public ActionResult Forms()
+        {
+            return View();
+        }
     }
 }
