@@ -196,7 +196,7 @@ render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html�
 ※ 引用需置於目標TAG之後 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/16.png) </br>
 
-React渲染成功!
+React渲染成功! </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/17.PNG)</br>
 
 
