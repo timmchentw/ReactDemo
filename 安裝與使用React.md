@@ -28,7 +28,7 @@
 
 ### 2. 建立專案與組態檔
 (1) 建立MVC專案 </br>
-(2) 建立Node專案於MVC專案中 </br>
+(2) 建立Node專案(ReactN)於MVC專案資料夾中 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/1.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/2.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/3.PNG) </br>
@@ -118,18 +118,19 @@ module.exports = {
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/5.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/6.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/7.PNG) </br>
-(3) 關閉Visual Studio，將整個Node專案內之檔案全部移到MVC專案之根目錄 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/8.PNG) </br>
-(4) 重開Visual Studio，刪除原Node專案並重新新增"已存在之Node專案" </br>
-※因NPM要執行命令時，Node專案中的所有檔案必須在MVC專案的根目錄才能夠執行 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/9.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/10.PNG) </br></br>
-(5) 將MVC專案中package.json檔案顯示出來 </br>
+(3) 將MVC專案中package.json檔案顯示出來(在ReactNode資料夾中) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11.png) </br>
 
+### 3. 建立jsx檔案目錄
+當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換
+(1) 於Node專案中新增src、src/components、src/components/App...等資料夾
+(2) JSX檔案新增於src/components/App層級之資料夾中
+(3) index.js新增於src目錄中，用於彙整各js
 
 ### 4. 執行NPM套件以轉換JSX檔案
-(1) 新增index.jsx檔案於Scripts/jsx資料夾中，輸入react語法 </br></br>
+(1) JSX檔案：新增App.jsx檔案於ReactNode/src/components/App資料夾中，輸入react語法 </br></br>
 **.jsx範例**
 ```javescript
 import React from 'react';
@@ -145,14 +146,15 @@ const App = () => (
 render(<App />, document.getElementById('app'));
 ```
 [Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br></br>
-(2) 右鍵開啟NPM Task Runner Explorer </br>
+(2) index.js檔案(用於彙整各個jsx檔案)：新增index.js檔案於ReactNode/src/components/App資料夾中，輸入react語法 </br></br>
+(3) 右鍵開啟NPM Task Runner Explorer </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/12.png) </br>
-(3) 點選dev開始轉換JSX檔案，成功後會顯示通知! </br>
+(4) 點選dev開始轉換JSX檔案，成功後會顯示通知! </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/13.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/14.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15.png) </br>
 
-(4) 當dev在Running時，因webpack的watch功能，只要JSX檔案有更動就會即時轉換成bundle.js檔案 </br>
+(5) 當dev在Running時，因webpack的watch功能，只要JSX檔案有更動就會即時轉換成bundle.js檔案 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15-2.PNG) </br></br>
 
 ### 5. 引用轉換後之React JS檔案
