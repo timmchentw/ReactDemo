@@ -16,10 +16,10 @@
  [　　配合AJAX](https://zh-hant.reactjs.org/docs/faq-ajax.html) </br>
  [　　Chrome的Debug擴充套件](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
  [　　NPM常用套件](https://ithelp.ithome.com.tw/articles/10193004) </br>
- [　　官方教程](https://zh-hant.reactjs.org/tutorial/tutorial.html#overview) </br>
- [　　React - DOM界的彼方(繁中)](https://eyesofkids.gitbooks.io/react-basic-zh-tw/) </br>
- [　　激戰 ReactJS 30天 系列](https://ithelp.ithome.com.tw/users/20107674/ironman/1472) </br>
- [　　一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br> </br> </br>
+ [　　-官方教程](https://zh-hant.reactjs.org/tutorial/tutorial.html#overview) </br>
+ [　　-React - DOM界的彼方(繁中)](https://eyesofkids.gitbooks.io/react-basic-zh-tw/) </br>
+ [　　-激戰 ReactJS 30天 系列](https://ithelp.ithome.com.tw/users/20107674/ironman/1472) </br>
+ [　　-一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br> </br> </br>
 
 ### 1. 安裝環境
 (1) 安裝 [Visual Studio Node JS](https://docs.microsoft.com/zh-tw/visualstudio/ide/quickstart-nodejs?view=vs-2019) (用於建立N專案) </br>
