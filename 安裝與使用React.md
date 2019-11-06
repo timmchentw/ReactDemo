@@ -144,7 +144,8 @@ class App extends React.Component {   // class名稱第一碼務必使用大寫!
 }
 
 export default App;   // 輸出供main.js引用
-```  </br>
+```
+</br>
 (3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br> </br>
 ```javascript
 import React from 'react';
@@ -160,7 +161,8 @@ class MainApp extends React.Component {
 }
 
 export default MainApp;  // 輸出供index.js引用
-```  </br>
+```
+</br>
 (4) 新增index.js：於src(第一層)，用於彙整各main.js檔案，並使用reactDOM直接渲染html檔案 </br>
 (※main.js與index.js皆用於彙整檔案，分成兩層是為了避免index.js的引用過於複雜) </br></br>
 ```javascript
@@ -171,7 +173,7 @@ import MainApp from './components/App/main.js';  // 引用main組件
 
 render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html中id為app者
 ```
-
+</br>
 ### 5. 執行NPM套件以轉換JSX檔案
 (1) 於package.json右鍵開啟NPM Task Runner Explorer </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/12.png) </br>
