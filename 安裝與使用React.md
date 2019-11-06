@@ -23,7 +23,7 @@
  [　　-一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br>
 
 ### 1. 安裝環境
-(1) 安裝 [Visual Studio Node JS](https://docs.microsoft.com/zh-tw/visualstudio/ide/quickstart-nodejs?view=vs-2019) (用於建立N專案) </br>
+(1) 安裝 [Visual Studio Node JS](https://docs.microsoft.com/zh-tw/visualstudio/ide/quickstart-nodejs?view=vs-2019) (用於建立NodeJS專案) </br>
 (2) 安裝 [Node](https://nodejs.org/zh-tw/download/) (使Package Manager Console可使用NPM指令) </br>
 (3) 安裝 [Visual Studio 擴充功能 NPM Task Runner](https://medium.com/@mvpdw06/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-visual-studio-%E9%A9%85%E5%8B%95-node-npm-%E6%8C%87%E4%BB%A4-461557134139) (方便監控Webpack執行) </br></br>
 
@@ -36,7 +36,7 @@
 (3) 新增.babelrc、webpack.config.js等套件之組態檔於Node專案根目錄，並填入以下資訊： <br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/4.png) </br>
 **.babelrc**
-```
+```json
 { 
   "presets": ["@babel/preset-env", "@babel/preset-react"], 
   "plugins": ["@babel/plugin-proposal-class-properties"] 
@@ -126,7 +126,8 @@ module.exports = {
 
 ### 4. 建立jsx檔案目錄
 當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/9.png) </>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/9.png) 
+</br>
 (1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
 (2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br>
 **.jsx範例**
