@@ -127,9 +127,9 @@ module.exports = {
 ### 4. 建立jsx檔案目錄
 當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換 </br>
 (1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
-(2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br></br>
+(2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br>
 **.jsx範例**
-```javescript
+```jsx
 import React from 'react';
 
 class App extends React.Component {   // class名稱第一碼務必使用大寫!!
@@ -145,9 +145,9 @@ class App extends React.Component {   // class名稱第一碼務必使用大寫!
 
 export default App;   // 輸出供main.js引用
 ```
-</br>
-(3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br> </br>
-```javascript
+
+(3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br>
+```jsx
 import React from 'react';
 import App from './app.jsx';   // 引用App組件
 // 檔案變多時則繼續引用其他組件
@@ -162,10 +162,10 @@ class MainApp extends React.Component {
 
 export default MainApp;  // 輸出供index.js引用
 ```
-</br>
+
 (4) 新增index.js：於src(第一層)，用於彙整各main.js檔案，並使用reactDOM直接渲染html檔案 </br>
-(※main.js與index.js皆用於彙整檔案，分成兩層是為了避免index.js的引用過於複雜) </br></br>
-```javascript
+(※main.js與index.js皆用於彙整檔案，分成兩層是為了避免index.js的引用過於複雜) </br>
+```jsx
 import React from 'react';
 import { render } from 'react-dom';
 import MainApp from './components/App/main.js';  // 引用main組件
@@ -173,10 +173,11 @@ import MainApp from './components/App/main.js';  // 引用main組件
 
 render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html中id為app者
 ```
-</br>
+
 ### 5. 執行NPM套件以轉換JSX檔案
 (1) 於package.json右鍵開啟NPM Task Runner Explorer </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/12.png) </br>
+
 (2) 點選dev開始轉換JSX檔案，成功後會顯示通知! 並產生bundle.js檔案 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/13.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/14.PNG) </br>
