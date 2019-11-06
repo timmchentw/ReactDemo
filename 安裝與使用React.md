@@ -126,6 +126,7 @@ module.exports = {
 
 ### 4. 建立jsx檔案目錄
 當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換 </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11-2.PNG)
 (1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
 (2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br>
 **.jsx範例**
@@ -195,6 +196,8 @@ render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html�
 ※ 引用需置於目標TAG之後 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/16.png) </br>
 
+React渲染成功!
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/17.PNG)</br>
 
 
 
