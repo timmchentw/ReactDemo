@@ -1,6 +1,21 @@
 # ReactJS
 ## 使用 Visual Studio Node 於 .net MVC 5 建立React物件
 
+### 基本觀念
+[官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
+[React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
+[檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR) </br>
+[setState時機注意](https://medium.com/@as790726/%E4%B8%80%E4%BA%9B%E8%87%AA%E5%B7%B1%E5%AF%AB-react-%E7%9A%84%E5%A5%BD%E7%BF%92%E6%85%A3-lifecycle-method-%E8%B7%9F-state-%E7%AE%A1%E7%90%86-b37a12da968b) </br>
+[配合AJAX](https://zh-hant.reactjs.org/docs/faq-ajax.html) </br>
+[Chrome的Debug擴充套件](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
+[NPM常用套件](https://ithelp.ithome.com.tw/articles/10193004) </br>
+[官方教程](https://zh-hant.reactjs.org/tutorial/tutorial.html#overview) </br>
+[React - DOM界的彼方(繁中)](https://eyesofkids.gitbooks.io/react-basic-zh-tw/) </br>
+[激戰 ReactJS 30天 系列](https://ithelp.ithome.com.tw/users/20107674/ironman/1472) </br>
+[一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br> </br> </br>
+
+
+### 安裝步驟
 [**《準備篇》**](#1-安裝環境) </br>
  [　　1. 安裝環境](#1-安裝環境) </br>
  [　　2. 設定組態](#2-建立專案與組態檔) </br>
