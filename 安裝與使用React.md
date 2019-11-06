@@ -32,7 +32,7 @@
 (2) 建立Node專案於MVC專案資料夾中(※建議與.csproj同一層級) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/1.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/2.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/3.PNG) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/3.PNG) </br></br>
 (3) 新增.babelrc、webpack.config.js等套件之組態檔於Node專案根目錄，並填入以下資訊： <br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/4.PNG) </br></br>
 **.babelrc**
@@ -118,16 +118,14 @@ module.exports = {
 (2) 此時npm會出現黃色空套件清單，以更新之方式下載完整NPM套件，完成會顯示紅色 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/5.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/6.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/7.PNG) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/9.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/10.PNG) </br></br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/7.PNG) </br></br>
 
-(3) 從MVC專案中將package.json檔案顯示出來(在./ReactNode資料夾中) </br>
+(3) 從MVC專案中將package.json檔案顯示出來 (在./ReactNode資料夾中) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11.png) </br>
 
 
 ### 4. 建立jsx檔案目錄
-當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換
+當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換 </br>
 (1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
 (2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br></br>
 **.jsx範例**
@@ -146,8 +144,8 @@ class App extends React.Component {   // class名稱第一碼務必使用大寫!
 }
 
 export default App;   // 輸出供main.js引用
-```
-(3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br>
+```  </br>
+(3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br> </br>
 ```javascript
 import React from 'react';
 import App from './app.jsx';   // 引用App組件
@@ -162,7 +160,7 @@ class MainApp extends React.Component {
 }
 
 export default MainApp;  // 輸出供index.js引用
-```
+```  </br>
 (4) 新增index.js：於src(第一層)，用於彙整各main.js檔案，並使用reactDOM直接渲染html檔案 </br>
 (※main.js與index.js皆用於彙整檔案，分成兩層是為了避免index.js的引用過於複雜) </br></br>
 ```javascript
