@@ -1,7 +1,16 @@
 # ReactJS
 ## 使用 Visual Studio Node 於 .net MVC 5 建立React物件
 
-### 基本觀念
+[**《準備篇》**](#1-安裝環境) </br>
+ [    觀念與資源](#觀念與資源) </br>
+ [　　1. 安裝環境](#1-安裝環境) </br>
+ [　　2. 設定組態](#2-建立專案與組態檔) </br>
+ [　　3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
+[**《應用篇》**](#4-執行NPM套件以轉換JSX檔案) </br>
+ [　　4. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
+ [　　5. 引用React](#5-引用轉換後之React-JS檔案) </br>
+
+### **觀念與資源**
 [官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
 [React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
 [檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR) </br>
@@ -13,16 +22,6 @@
 [React - DOM界的彼方(繁中)](https://eyesofkids.gitbooks.io/react-basic-zh-tw/) </br>
 [激戰 ReactJS 30天 系列](https://ithelp.ithome.com.tw/users/20107674/ironman/1472) </br>
 [一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br> </br> </br>
-
-
-### 安裝步驟
-[**《準備篇》**](#1-安裝環境) </br>
- [　　1. 安裝環境](#1-安裝環境) </br>
- [　　2. 設定組態](#2-建立專案與組態檔) </br>
- [　　3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
-[**《應用篇》**](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　4. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　5. 引用React](#5-引用轉換後之React-JS檔案) </br>
 
 ### 1. 安裝環境
 (1) 安裝 [Visual Studio Node JS](https://docs.microsoft.com/zh-tw/visualstudio/ide/quickstart-nodejs?view=vs-2019) (用於建立N專案) </br>
