@@ -58,7 +58,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,                             // 目標為JSX檔案
+                test: /\.(js|jsx)$/,                             // 目標為JS或JSX檔案
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"                  // 使用babel-loader進行編譯
