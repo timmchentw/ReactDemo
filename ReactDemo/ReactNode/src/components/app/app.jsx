@@ -26,7 +26,7 @@ class App extends React.Component {
             <div>
                 <h1 id="method1">{this.props.title}</h1>
                 <div id="method2">{this.props.text1}</div> <br />
-                <App2 text2= {this.state.textState} />
+                <App2 text2={this.state.textState} />
             </div>
         );
     }
@@ -37,7 +37,7 @@ class App2 extends React.Component {
             <div id="method3">{this.props.text2}</div>
         );
     }
-} 
+}
 
 
 // (1)組件變數預設值
