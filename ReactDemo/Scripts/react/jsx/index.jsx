@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { render } from 'react-dom';
 
 /*
 const App = () => (
@@ -11,13 +10,12 @@ const App = () => (
 */
 
 
-
 // 自訂組件 (限定return一個TAG)
 class App extends React.Component {
 
     // (3)使用State更改其他組件變數值
     constructor(props) {
-        super(props);
+        super(props);   // 繼承props屬性
         this.state = {
             textState: "NEW TEXTTTT"
         }
