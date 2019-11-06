@@ -5,9 +5,10 @@
  [　　1. 安裝環境](#1-安裝環境) </br>
  [　　2. 設定組態](#2-建立專案與組態檔) </br>
  [　　3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
+ [    4. 建立jsx檔案目錄](#4-建立jsx檔案目錄)
 [**《應用篇》**](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　4. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　5. 引用React](#5-引用轉換後之React-JS檔案) </br> </br>
+ [　　5. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
+ [　　6. 引用React](#5-引用轉換後之React-JS檔案) </br> </br>
 **《觀念與資源》** </br>
  [　　官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
  [　　React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
@@ -28,7 +29,7 @@
 
 ### 2. 建立專案與組態檔
 (1) 建立MVC專案 </br>
-(2) 建立Node專案(ReactN)於MVC專案資料夾中 </br>
+(2) 建立Node專案於MVC專案資料夾中(※建議與.csproj同一層級) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/1.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/2.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/3.PNG) </br>
@@ -50,21 +51,21 @@ var WebpackNotifierPlugin = require("webpack-notifier");
 var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = {
-    entry: "./Scripts/jsx/index.jsx",                       // 轉換前之React JSX檔案路徑 (可自行定義)
+    entry: "./src/index.js",                        // 轉換前之React JSX檔案路徑 (可自行定義)
     output: {
-        path: path.resolve(__dirname, "./Scripts/react"),   // 轉換後之JS輸出檔案路徑 (可自行定義)
-        filename: "bundle.js"                               // 輸出檔名
+        path: path.resolve(__dirname, "./src"),     // 轉換後之JS輸出檔案路徑 (可自行定義)
+        filename: "bundle.js"                       // 輸出檔名
     },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,                             // 目標為JS或JSX檔案
+                test: /\.(js|jsx)$/,                // 目標為JS或JSX檔案
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"                  // 使用babel-loader進行編譯
+                    loader: "babel-loader"          // 使用babel-loader進行編譯
                 },                
                 options: {
-                    presets: ["@babel/preset-env"]          // 可使用Babel進行最新ES6編譯
+                    presets: ["@babel/preset-env", "@babel/preset-react"]  // 可使用Babel進行最新ES6編譯
                 }
             }
         ]
@@ -74,7 +75,7 @@ module.exports = {
 };
 ```
  [Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br>
-※Webpack組態設定輸出js檔案之路徑，之後在view會需要src引用</br></br>
+※Webpack組態設定輸出bundle.js檔案之路徑，之後在view會需要src引用</br></br>
 
 ### 3. 新增NPM套件於NODE
 (1) 將package.json新增以下資訊 </br></br>
@@ -120,47 +121,75 @@ module.exports = {
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/7.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/9.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/10.PNG) </br></br>
-(3) 將MVC專案中package.json檔案顯示出來(在ReactNode資料夾中) </br>
+
+(3) 從MVC專案中將package.json檔案顯示出來(在./ReactNode資料夾中) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11.png) </br>
 
-### 3. 建立jsx檔案目錄
-當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換
-(1) 於Node專案中新增src、src/components、src/components/App...等資料夾
-(2) JSX檔案新增於src/components/App層級之資料夾中
-(3) index.js新增於src目錄中，用於彙整各js
 
-### 4. 執行NPM套件以轉換JSX檔案
-(1) JSX檔案：新增App.jsx檔案於ReactNode/src/components/App資料夾中，輸入react語法 </br></br>
+### 4. 建立jsx檔案目錄
+當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換
+(1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
+(2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br></br>
 **.jsx範例**
 ```javescript
 import React from 'react';
-import { render } from 'react-dom';
 
-const App = () => (
-    <React.Fragment>
-        <h1>React in ASP.NET MVC!</h1>
-        <div>Hello React World</div>
-    </React.Fragment>
-);
+class App extends React.Component {   // class名稱第一碼務必使用大寫!!
+    render() {  // 注意render只能return一個tag，有多個tag要包在同一個tag裡面
+        return (
+            <div>
+                <h1>React in ASP.NET MVC 5</h1>
+                <div>Hello React!</div>
+            </div>
+        );
+    }
+}
 
-render(<App />, document.getElementById('app'));
+export default App;   // 輸出供main.js引用
 ```
-[Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br></br>
-(2) index.js檔案(用於彙整各個jsx檔案)：新增index.js檔案於ReactNode/src/components/App資料夾中，輸入react語法 </br></br>
-(3) 右鍵開啟NPM Task Runner Explorer </br>
+(3) 新增main.js檔案：同JSX檔案之資料夾(第三層)，用於彙整同一資料夾中的多個組件(jsx) </br>
+```javascript
+import React from 'react';
+import App from './app.jsx';   // 引用App組件
+// 檔案變多時則繼續引用其他組件
+
+class MainApp extends React.Component {
+    render() {
+        return (
+            <App />
+        );
+    }
+}
+
+export default MainApp;  // 輸出供index.js引用
+```
+(4) 新增index.js：於src(第一層)，用於彙整各main.js檔案，並使用reactDOM直接渲染html檔案 </br>
+(※main.js與index.js皆用於彙整檔案，分成兩層是為了避免index.js的引用過於複雜) </br></br>
+```javascript
+import React from 'react';
+import { render } from 'react-dom';
+import MainApp from './components/App/main.js';  // 引用main組件
+// 檔案變多時則繼續引用其他main組件
+
+render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html中id為app者
+```
+
+### 5. 執行NPM套件以轉換JSX檔案
+(1) 於package.json右鍵開啟NPM Task Runner Explorer </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/12.png) </br>
-(4) 點選dev開始轉換JSX檔案，成功後會顯示通知! </br>
+(2) 點選dev開始轉換JSX檔案，成功後會顯示通知! 並產生bundle.js檔案 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/13.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/14.PNG) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15.png) </br>
 
-(5) 當dev在Running時，因webpack的watch功能，只要JSX檔案有更動就會即時轉換成bundle.js檔案 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15-2.PNG) </br></br>
+(3) 當dev在Running時，因webpack的watch功能，只要JSX檔案有更動就會即時轉換成bundle.js檔案 </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15-2.PNG) </br>
+(※有throw er; // Unhandled 'error' event Error: listen EADDRINUSE ::: XXXX 的bug須重開機以重置port占用問題) </br></br>
 
-### 5. 引用轉換後之React JS檔案
+### 6. 引用轉換後之React JS檔案
 將欲引入React之View(.cshtml)中新增bundle.js引用，即可使用React功能 </br>
 ```html
-<script src="~/Scripts/react/bundle.js"></script>
+<script src="~/ReactNode/src/bundle.js"></script>
 ```
 ※ 引用需置於目標TAG之後 </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/16.png) </br>
