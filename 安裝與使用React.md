@@ -6,9 +6,9 @@
  [　　2. 設定組態](#2-建立專案與組態檔) </br>
  [　　3. 安裝NPM套件](#3-新增NPM套件於NODE) </br>
  [　　4. 建立jsx檔案目錄](#4-建立jsx檔案目錄) </br>
-[**《應用篇》**](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　5. 執行JSX轉換](#4-執行NPM套件以轉換JSX檔案) </br>
- [　　6. 引用React](#5-引用轉換後之React-JS檔案) </br> </br>
+[**《應用篇》**](#5-執行NPM套件以轉換JSX檔案) </br>
+ [　　5. 執行JSX轉換](#5-執行NPM套件以轉換JSX檔案) </br>
+ [　　6. 引用React](#6-引用轉換後之React-JS檔案) </br> </br>
 **《觀念與資源》** </br>
  [　　官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
  [　　React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
