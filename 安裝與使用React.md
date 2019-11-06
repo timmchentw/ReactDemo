@@ -30,11 +30,11 @@
 ### 2. 建立專案與組態檔
 (1) 建立MVC專案 </br>
 (2) 建立Node專案於MVC專案資料夾中(※建議與.csproj同一層級) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/1.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/2.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/3.PNG) </br></br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/1.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/2.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/3.png) </br></br>
 (3) 新增.babelrc、webpack.config.js等套件之組態檔於Node專案根目錄，並填入以下資訊： <br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/4.PNG) </br></br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/4.png) </br></br>
 **.babelrc**
 ```
 { 
@@ -116,17 +116,17 @@ module.exports = {
 }
 ```
 (2) 此時npm會出現黃色空套件清單，以更新之方式下載完整NPM套件，完成會顯示紅色 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/5.PNG) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/6.png) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/7.PNG) </br></br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/5.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/6.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/7.png) </br></br>
 
 (3) 從MVC專案中將package.json檔案顯示出來 (在./ReactNode資料夾中) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/8.png) </br>
 
 
 ### 4. 建立jsx檔案目錄
 當專案較龐大時，會有許多的jsx組件，須將檔案目錄整理得宜再進行jsx轉換 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/11-2.PNG)
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/9.png)
 (1) 於Node專案中建立資料夾：src(第一層)、src/components(第二層)、src/components/App(第三層，自行整理與命名各資料夾) </br>
 (2) 新增JSX檔案：於src/components/App(第三層)資料夾中，輸入react語法 </br>
 **.jsx範例**
@@ -177,15 +177,15 @@ render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html�
 
 ### 5. 執行NPM套件以轉換JSX檔案
 (1) 於package.json右鍵開啟NPM Task Runner Explorer </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/12.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/10.png) </br>
 
 (2) 點選dev開始轉換JSX檔案，成功後會顯示通知! 並產生bundle.js檔案 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/13.PNG) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/14.PNG) </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/11.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/12.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/13.png) </br>
 
 (3) 當dev在Running時，因webpack的watch功能，只要JSX檔案有更動就會即時轉換成bundle.js檔案 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/15-2.PNG) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/14.png) </br>
 (※有throw er; // Unhandled 'error' event Error: listen EADDRINUSE ::: XXXX 的bug須重開機以重置port占用問題) </br></br>
 
 ### 6. 引用轉換後之React JS檔案
@@ -194,10 +194,10 @@ render( <MainApp /> , document.getElementById('app') );  // 渲染對象為html�
 <script src="~/ReactNode/src/bundle.js"></script>
 ```
 ※ 引用需置於目標TAG之後 </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/16.png) </br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/15.png) </br>
 
 React渲染成功! </br>
-![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F/17.PNG)</br>
+![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/16.png)</br>
 
 
 
