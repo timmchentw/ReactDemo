@@ -13,6 +13,7 @@
  [　　官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
  [　　React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
  [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR) </br>
+ [　　合成>繼承](https://zh-hant.reactjs.org/docs/composition-vs-inheritance.html)
  [　　setState時機注意](https://medium.com/@as790726/%E4%B8%80%E4%BA%9B%E8%87%AA%E5%B7%B1%E5%AF%AB-react-%E7%9A%84%E5%A5%BD%E7%BF%92%E6%85%A3-lifecycle-method-%E8%B7%9F-state-%E7%AE%A1%E7%90%86-b37a12da968b) </br>
  [　　配合AJAX](https://zh-hant.reactjs.org/docs/faq-ajax.html) </br>
  [　　Chrome的Debug擴充套件](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
