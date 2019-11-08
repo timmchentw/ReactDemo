@@ -23,3 +23,6 @@ _notes			# Dreamwaver�s�����ؿ�
 
 ## Should ignore when cooperating
 安裝與使用步驟/photothumb.db
+packages/
+*.log
+*.user
