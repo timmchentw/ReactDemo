@@ -37,8 +37,9 @@
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/1.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/2.png) </br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/3.png) </br>
-(3) 新增.babelrc、webpack.config.js等套件之組態檔於Node專案根目錄，並填入以下資訊： <br>
+(3) 新增.babelrc、webpack.config.js、jsconfig.json等組態檔於Node專案根目錄，並填入以下資訊： <br>
 ![image](https://raw.githubusercontent.com/timmchentw/ReactDemo/master/%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%AD%A5%E9%A9%9F/4.png) </br>
+
 **.babelrc**
 ```json
 { 
@@ -46,6 +47,9 @@
   "plugins": ["@babel/plugin-proposal-class-properties"] 
 }
 ```
+※此檔案為Babel套件之組態檔 </br>
+
+<br>
 **webpack.config.js**
 ```javascript
 "use strict";
@@ -78,8 +82,21 @@ module.exports = {
     plugins: [new WebpackNotifierPlugin(), new BrowserSyncPlugin()]
 };
 ```
- [Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br>
-※Webpack組態設定輸出bundle.js檔案之路徑，之後在view會需要src引用</br></br>
+[Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br>
+※此檔案為Webpack組態檔，其設定輸出bundle.js檔案之路徑，之後在view會需要src引用 </br>
+
+**jsconfig.json**
+```json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react"
+  },
+  "exclude": [ "node_modules", "build" ]
+}
+```
+[Reference](https://javascriptplayground.com/vscode-go-to-definition-jsx/) </br>
+※此檔案使VS能識別.jsx檔案進行navigate，即對組件按F12(go to definition)可轉往原始引用檔案處 </br></br>
 
 ### 3. 新增NPM套件於NODE
 (1) 將package.json新增以下資訊 </br></br>
