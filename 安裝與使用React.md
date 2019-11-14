@@ -15,10 +15,13 @@
  [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR) </br>
  [　　複用組件：合成>繼承](https://zh-hant.reactjs.org/docs/composition-vs-inheritance.html) </br>
  [　　setState時機注意](https://medium.com/@as790726/%E4%B8%80%E4%BA%9B%E8%87%AA%E5%B7%B1%E5%AF%AB-react-%E7%9A%84%E5%A5%BD%E7%BF%92%E6%85%A3-lifecycle-method-%E8%B7%9F-state-%E7%AE%A1%E7%90%86-b37a12da968b) </br>
- [　　配合AJAX](https://zh-hant.reactjs.org/docs/faq-ajax.html) </br>
- [　　Chrome的Debug擴充套件](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
+ [　　配合AJAX - Fetch API](https://zh-hant.reactjs.org/docs/faq-ajax.html) / 
+ [教學](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/ajax_fetch.html) / 
+ [官方說明文件](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) </br>
+ [　　Chrome的Debug擴充套件(超神!)](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
+ [　　Visual Studio的快速填入套件(超神!)](https://marketplace.visualstudio.com/items?itemName=IstvanKocsis.ReactCodeSnippets) </br>
  [　　NPM常用套件](https://ithelp.ithome.com.tw/articles/10193004) </br>
- [　　-官方教程](https://zh-hant.reactjs.org/tutorial/tutorial.html#overview) </br>
+ [　　-官方教學](https://zh-hant.reactjs.org/tutorial/tutorial.html#overview) </br>
  [　　-React - DOM界的彼方(繁中)](https://eyesofkids.gitbooks.io/react-basic-zh-tw/) </br>
  [　　-激戰 ReactJS 30天 系列](https://ithelp.ithome.com.tw/users/20107674/ironman/1472) </br>
  [　　-一步一腳印的React旅程 系列](https://ithelp.ithome.com.tw/users/20106935/ironman/1651) </br>
