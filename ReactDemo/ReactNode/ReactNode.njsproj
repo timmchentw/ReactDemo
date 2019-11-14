@@ -33,7 +33,16 @@
     <Compile Include="src\components\app\app.jsx">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\components\app\compositionTest.jsx">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\components\app\main.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\components\app\propsTest.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\components\app\tempTrans.jsx">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\components\forms\forms.jsx" />

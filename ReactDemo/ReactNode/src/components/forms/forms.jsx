@@ -6,23 +6,23 @@ class InputText extends React.Component {
         this.state = {      // 設定初始state變數
             data: "Text here..."
         };
-        this.updateData = this.updateData.bind(this);   // 綁定updateData這個function
+        this.HandlerUpdate = this.HandlerUpdate.bind(this);   // 綁定updateData這個function
+    }
+
+    HandlerUpdate(event) { // 自定義Function
+        this.setState({ data: event.target.value });
     }
 
     render() {
         return (
             <div>
-                <Content myData={this.state.data} updateMyData={this.updateData} />     
+                <Content myData={this.state.data} updateMyData={this.HandlerUpdate} />
             </div>
         );  // 以props變數、自定義function輸入<Content/>這個自定義class的自定義變數myData&updateData
     }
-
-    updateData(event) { // 自定義Function
-        this.setState({ data: event.target.value });
-    }
 }
 
-// 被呼叫的class
+// 被呼叫的Component
 class Content extends React.Component {
     render() {
         return (
