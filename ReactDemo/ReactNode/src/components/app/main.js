@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import App from './app.jsx';   // 引用App組件
-import PropsTest from './propsTest.jsx';   // 引用PropsTest組件
+import PropsTest from './propsTest.jsx';   // 引用App組件
 import { BtnShowDiv, TempTrans } from './tempTrans.jsx';
 import { UseCompos } from './compositionTest.jsx';
 // 檔案變多時則繼續引用其他組件
