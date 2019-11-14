@@ -47,9 +47,8 @@
   "plugins": ["@babel/plugin-proposal-class-properties"] 
 }
 ```
-※此檔案為Babel套件之組態檔 </br>
+※此檔案為Babel套件之組態檔 </br> </br>
 
-<br>
 **webpack.config.js**
 ```javascript
 "use strict";
@@ -83,7 +82,7 @@ module.exports = {
 };
 ```
 [Reference: Sung M. Kim](https://dev.to/dance2die/setting-up-a-react-environment-for-aspnet-mvc-44la) </br>
-※此檔案為Webpack組態檔，其設定輸出bundle.js檔案之路徑，之後在view會需要src引用 </br>
+※此檔案為Webpack組態檔，其設定輸出bundle.js檔案之路徑，之後在view會需要src引用 </br> </br>
 
 **jsconfig.json**
 ```json
