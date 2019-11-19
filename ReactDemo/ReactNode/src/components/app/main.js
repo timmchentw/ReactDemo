@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import ReactDOM from 'react-dom'
 import App from './app.jsx';   // 引用App組件
 import PropsTest from './propsTest.jsx';   // 引用App組件
 import { BtnShowDiv, TempTrans } from './tempTrans.jsx';
@@ -27,4 +28,5 @@ class MainApp extends React.Component {
     }
 }
 
-export default MainApp;  // 輸出供index.js引用
+ReactDOM.render(<MainApp />, document.getElementById('app'));
+//export default MainApp;  // 輸出供index.js引用

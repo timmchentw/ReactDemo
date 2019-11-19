@@ -29,29 +29,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="src\bundle.js" />
-    <Compile Include="src\components\app\app.jsx">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\components\app\compositionTest.jsx">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\components\app\main.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\components\app\propsTest.jsx">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\components\app\tempTrans.jsx">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\components\forms\forms.jsx" />
-    <Compile Include="src\components\forms\main.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="src\index.js">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="src\components\app\App.jsx" />
+    <Compile Include="src\components\app\CompositionTest.jsx" />
+    <Compile Include="src\components\app\main.js" />
+    <Compile Include="src\components\app\PropsTest.jsx" />
+    <Compile Include="src\components\app\TempTrans.jsx" />
+    <Compile Include="src\components\forms\Forms.jsx" />
+    <Compile Include="src\components\forms\main.js" />
     <Compile Include="webpack.config.js">
       <SubType>Code</SubType>
     </Compile>

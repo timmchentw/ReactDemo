@@ -10,4 +10,5 @@ class MainForms extends React.Component {
     }
 }
 
-export default MainForms;  // 輸出供index.js引用
+ReactDOM.render(<MainForms />, document.getElementById('form'));
+// export default MainForms;  // 輸出供index.js引用
