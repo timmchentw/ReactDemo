@@ -12,7 +12,9 @@
 **《觀念與資源》** </br>
  [　　官方公布的使用注意事項](https://reactjs.org/docs/react-component.html) </br>
  [　　React生命週期](https://ithelp.ithome.com.tw/articles/10200767?sc=iThelpR) </br>
- [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR) </br>
+ [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR)  / 
+ [Webpack多重輸出問題](https://stackoverflow.com/questions/31933359/using-react-in-a-multi-page-app)  / 
+ [多重輸出方法](https://itnext.io/building-multi-page-application-with-react-f5a338489694) </br>
  [　　複用組件：合成>繼承](https://zh-hant.reactjs.org/docs/composition-vs-inheritance.html) </br>
  [　　setState時機注意](https://medium.com/@as790726/%E4%B8%80%E4%BA%9B%E8%87%AA%E5%B7%B1%E5%AF%AB-react-%E7%9A%84%E5%A5%BD%E7%BF%92%E6%85%A3-lifecycle-method-%E8%B7%9F-state-%E7%AE%A1%E7%90%86-b37a12da968b) </br>
  [　　配合AJAX - Fetch API](https://zh-hant.reactjs.org/docs/faq-ajax.html) / 
