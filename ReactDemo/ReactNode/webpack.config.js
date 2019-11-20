@@ -62,7 +62,7 @@ function findFiles(searchPath, targetFilename) {
     };
     startScaning(searchPath);
     const targetFilesArr = targetFiles.reduce((obj, filePath) => {
-        const entryChunkName = path.dirname(filePath).replace(searchPath,"");
+        const entryChunkName = path.basename(path.dirname(filePath));
         obj[entryChunkName] = `./${filePath}`;  // name array object
         return obj;
         }, {}

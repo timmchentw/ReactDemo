@@ -136,6 +136,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="ReactNode\src\app.bundle.js" />
+    <Content Include="ReactNode\src\components\app\App.jsx" />
+    <Content Include="ReactNode\src\components\app\CompositionTest.jsx" />
+    <Content Include="ReactNode\src\components\app\main.js" />
+    <Content Include="ReactNode\src\components\app\PropsTest.jsx" />
+    <Content Include="ReactNode\src\components\app\TempTrans.jsx" />
+    <Content Include="ReactNode\src\components\forms\Forms.jsx" />
+    <Content Include="ReactNode\src\components\forms\main.js" />
+    <Content Include="ReactNode\src\forms.bundle.js" />
+    <Content Include="ReactNode\src\vendor.bundle.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
