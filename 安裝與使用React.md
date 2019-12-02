@@ -76,6 +76,14 @@ module.exports = {
                 options: {
                     presets: ["@babel/preset-env", "@babel/preset-react"]  // 可使用Babel進行最新ES6編譯
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'] // 用於引用css檔案時識別
+            },
+            {
+                test: /\.(png|jpg)$/,
+                use: ['url-loader']                 // css引用url檔案時識別
             }
         ]
     },
@@ -126,14 +134,17 @@ module.exports = {
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.2.0",
     "express": "~4.16.4",
     "path": "~0.12.7",
     "react": "^16.11.0",
     "react-dom": "~16.6.0",
+    "style-loader": "^1.0.1",
+    "url-loader": "^3.0.0",
     "webpack": "^4.23.1",
     "webpack-cli": "~3.1.2",
     "webpack-dev-server": "^3.9.0",
-    "webpack-notifier": "^1.8.0"
+    "webpack-notifier": "^1.8.0",
   }
 }
 ```
