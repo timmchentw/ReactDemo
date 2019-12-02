@@ -125,7 +125,7 @@ module.exports = {
     "build": "webpack"
   },
   "dependencies": { // 以下為欲安裝之NPM套件資訊(空殼)
-    "@babel/core": "^7.6.4",,
+    "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-unicode-property-regex": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
@@ -144,7 +144,7 @@ module.exports = {
     "webpack": "^4.23.1",
     "webpack-cli": "~3.1.2",
     "webpack-dev-server": "^3.9.0",
-    "webpack-notifier": "^1.8.0",
+    "webpack-notifier": "^1.8.0"
   }
 }
 ```
