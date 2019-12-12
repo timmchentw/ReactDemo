@@ -15,6 +15,7 @@
  [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR)  / 
  [Webpack多重輸出問題](https://stackoverflow.com/questions/31933359/using-react-in-a-multi-page-app)  / 
  [多重輸出方法](https://itnext.io/building-multi-page-application-with-react-f5a338489694) </br>
+ [　　Component簡化新功能：Function & Hooks](https://blog.kalan.dev/function-component-to-hooks/) <
  [　　複用組件：合成>繼承](https://zh-hant.reactjs.org/docs/composition-vs-inheritance.html) </br>
  [　　Component與Function使用時機](https://yakimhsu.com/project/project_w21_04_React_basic_functional-component.html) </br>
  [　　全域變數使用方法(類似viewmodel)](https://medium.com/@Whien/%E9%80%8F%E9%81%8E-react-usecontext-%E8%88%87-usereducer-%E4%BE%86%E5%81%9A-global-state-manager-bed30fb1f08b) </br>
