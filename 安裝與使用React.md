@@ -134,6 +134,7 @@ module.exports = {
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-unicode-property-regex": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "babel-cli": "^6.26.0",
