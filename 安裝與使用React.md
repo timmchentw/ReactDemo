@@ -24,6 +24,8 @@
  [　　配合AJAX - Fetch API](https://zh-hant.reactjs.org/docs/faq-ajax.html) / 
  [教學](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/ajax_fetch.html) / 
  [官方說明文件](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) </br>
+ [　　使用Hooks實現Global State Manager](https://medium.com/@Whien/%E9%80%8F%E9%81%8E-react-usecontext-%E8%88%87-usereducer-%E4%BE%86%E5%81%9A-global-state-manager-bed30fb1f08b) /
+ [搭配使用Hooks進行同步Fetch](https://css-tricks.com/fetching-data-in-react-using-react-async/) </br>
  [　　Chrome的Debug擴充套件(超神!)](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
  [　　Visual Studio的快速填入套件(超神!)](https://marketplace.visualstudio.com/items?itemName=IstvanKocsis.ReactCodeSnippets) </br>
  [　　NPM常用套件](https://ithelp.ithome.com.tw/articles/10193004) </br>
