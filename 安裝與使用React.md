@@ -15,11 +15,17 @@
  [　　檔案目錄結構](https://ithelp.ithome.com.tw/articles/10203767?sc=iThelpR)  / 
  [Webpack多重輸出問題](https://stackoverflow.com/questions/31933359/using-react-in-a-multi-page-app)  / 
  [多重輸出方法](https://itnext.io/building-multi-page-application-with-react-f5a338489694) </br>
+ [　　Component簡化新功能：Function & Hooks](https://blog.kalan.dev/function-component-to-hooks/)  /
+ [官方Hook規則](https://zh-hant.reactjs.org/docs/hooks-rules.html)  </br>
  [　　複用組件：合成>繼承](https://zh-hant.reactjs.org/docs/composition-vs-inheritance.html) </br>
+ [　　Component與Function使用時機](https://yakimhsu.com/project/project_w21_04_React_basic_functional-component.html) </br>
+ [　　全域變數使用方法(類似viewmodel)](https://medium.com/@Whien/%E9%80%8F%E9%81%8E-react-usecontext-%E8%88%87-usereducer-%E4%BE%86%E5%81%9A-global-state-manager-bed30fb1f08b) </br>
  [　　setState時機注意](https://medium.com/@as790726/%E4%B8%80%E4%BA%9B%E8%87%AA%E5%B7%B1%E5%AF%AB-react-%E7%9A%84%E5%A5%BD%E7%BF%92%E6%85%A3-lifecycle-method-%E8%B7%9F-state-%E7%AE%A1%E7%90%86-b37a12da968b) </br>
  [　　配合AJAX - Fetch API](https://zh-hant.reactjs.org/docs/faq-ajax.html) / 
  [教學](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/ajax_fetch.html) / 
  [官方說明文件](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) </br>
+ [　　使用Hooks實現Global State Manager](https://medium.com/@Whien/%E9%80%8F%E9%81%8E-react-usecontext-%E8%88%87-usereducer-%E4%BE%86%E5%81%9A-global-state-manager-bed30fb1f08b) /
+ [搭配使用Hooks進行同步Fetch](https://css-tricks.com/fetching-data-in-react-using-react-async/) </br>
  [　　Chrome的Debug擴充套件(超神!)](https://medium.com/reactmaker/%E4%BD%BF%E7%94%A8-react-developer-tools-%E4%BE%86%E5%81%B5%E9%8C%AF%E4%BD%A0%E7%9A%84%E7%B6%B2%E9%A0%81-bd44d6d62596) </br>
  [　　Visual Studio的快速填入套件(超神!)](https://marketplace.visualstudio.com/items?itemName=IstvanKocsis.ReactCodeSnippets) </br>
  [　　NPM常用套件](https://ithelp.ithome.com.tw/articles/10193004) </br>
@@ -76,6 +82,14 @@ module.exports = {
                 options: {
                     presets: ["@babel/preset-env", "@babel/preset-react"]  // 可使用Babel進行最新ES6編譯
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'] // 用於引用css檔案時識別
+            },
+            {
+                test: /\.(png|jpg)$/,
+                use: ['url-loader']                 // css引用url檔案時識別
             }
         ]
     },
@@ -117,19 +131,23 @@ module.exports = {
     "build": "webpack"
   },
   "dependencies": { // 以下為欲安裝之NPM套件資訊(空殼)
-    "@babel/core": "^7.6.4",,
+    "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-unicode-property-regex": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.2.0",
     "express": "~4.16.4",
     "path": "~0.12.7",
     "react": "^16.11.0",
     "react-dom": "~16.6.0",
+    "style-loader": "^1.0.1",
+    "url-loader": "^3.0.0",
     "webpack": "^4.23.1",
     "webpack-cli": "~3.1.2",
     "webpack-dev-server": "^3.9.0",
