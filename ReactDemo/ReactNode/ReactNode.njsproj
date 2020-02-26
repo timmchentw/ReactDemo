@@ -31,6 +31,7 @@
     <Compile Include="app.js" />
     <Compile Include="src\components\app\App.jsx" />
     <Compile Include="src\components\app\CompositionTest.jsx" />
+    <Compile Include="src\components\app\GlobalStateManager.jsx" />
     <Compile Include="src\components\app\main.js" />
     <Compile Include="src\components\app\PropsTest.jsx" />
     <Compile Include="src\components\app\TempTrans.jsx" />

@@ -29,4 +29,6 @@ class MainApp extends React.Component {
 }
 
 ReactDOM.render(<MainApp />, document.getElementById('app'));
+ReactDOM.render(<Application />, document.getElementById('globalState'));
+
 //export default MainApp;  // 輸出供index.js引用
