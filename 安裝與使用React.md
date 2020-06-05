@@ -76,10 +76,8 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,                // 目標為JS或JSX檔案
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"          // 使用babel-loader進行編譯
-                },                
-                options: {
+                loader: "babel-loader",          // 使用babel-loader進行編譯
+                query: {
                     presets: ["@babel/preset-env", "@babel/preset-react"]  // 可使用Babel進行最新ES6編譯
                 }
             },
