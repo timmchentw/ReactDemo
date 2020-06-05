@@ -78,7 +78,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",          // 使用babel-loader進行編譯
                 query: {
-                    presets: ["@babel/preset-env", "@babel/preset-react"]  // 可使用Babel進行最新ES6編譯
+                    [presets: ["@babel/preset-env", "@babel/preset-react"] ] // 可使用Babel進行最新ES6編譯
                 }
             },
             {
